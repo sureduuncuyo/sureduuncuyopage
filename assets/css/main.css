@@ -1,16 +1,16 @@
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+  --font-default: "Titillium Web", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Montserrat", sans-serif;
+  --font-primary: "Titillium Web", sans-serif;
   --font-secondary: "Poppins", sans-serif;
 }
 
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #47b5ff;
+  --color-primary: linear-gradient(180deg, rgba(247,247,252,1) 0%, rgba(62, 178, 255) 78%);
   --color-secondary: #f85a40;
 }
 
@@ -25,6 +25,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  background: linear-gradient(180deg, rgba(247,247,252,1) 0%, rgba(62, 178, 255) 78%);
 }
 
 a {
@@ -55,7 +56,7 @@ section {
 }
 
 .sections-bg {
-  background-color: #f6f6f6;
+  background-color: #000000;
 }
 
 .section-header {
@@ -321,7 +322,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  background-color: rgba(38, 125, 255, 0.918);
 }
 
 .header.sticked {
@@ -339,7 +340,7 @@ section {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.8px;
@@ -2634,7 +2635,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: var(--color-primary);
+  background-color: hwb(197 22% 1%);
   padding: 50px 0;
   color: white;
 }
