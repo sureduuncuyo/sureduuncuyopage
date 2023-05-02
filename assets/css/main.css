@@ -989,7 +989,53 @@ section {
     opacity: 0;
   }
 }
+/*--------------------------------------------------------------
+# News Section
+--------------------------------------------------------------*/
+.news {
+  width: 100%;
+  position: relative;
+  background: var(--color-primary);
+  padding: 60px 0 0 0;
+}
 
+@media (min-width: 1365px) {
+  .news {
+    background-attachment: fixed;
+  }
+}
+
+
+.news .new {
+  font: var(--font-primary);
+  width: 75%;
+  position: relative;
+  background: #37aff577;
+  margin: 10px;
+  padding: 60px;
+  border-radius: 30px;
+  text-align: center;
+}
+.news .new h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  color: white;
+}
+
+.news h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.news p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
 /*--------------------------------------------------------------
 # Our Services Section
 --------------------------------------------------------------*/
