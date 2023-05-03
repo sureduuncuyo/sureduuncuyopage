@@ -10,7 +10,7 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: linear-gradient(180deg, rgba(247,247,252,1) 0%, rgba(62, 178, 255) 78%);
+  --color-primary: linear-gradient(180deg, rgba(0, 0, 102, 0.308) 0%, rgba(62, 178, 255) 78%);
   --color-secondary: #f85a40;
 }
 
@@ -993,49 +993,59 @@ section {
 # News Section
 --------------------------------------------------------------*/
 .news {
-  width: 100%;
-  position: relative;
   background: var(--color-primary);
   padding: 60px 0 0 0;
-}
-
-@media (min-width: 1365px) {
-  .news {
-    background-attachment: fixed;
-  }
-}
-
-
+  font-family: var(--font-primary);
+  color: #f3d3d3;
+} 
 .news .new {
-  font: var(--font-primary);
-  width: 75%;
-  position: relative;
-  background: #37aff577;
-  margin: 10px;
-  padding: 60px;
-  border-radius: 30px;
   text-align: center;
+  padding: 20px;
+  background: #ADE8F4;
+  color: #000;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
 }
-.news .new h1 {
-  font-size: 38px;
-  font-weight: 700;
+.news .new h3 {
+  font-size: 32px;
+  font-weight: 600;
   margin-bottom: 20px;
-  text-decoration: underline;
-  color: white;
+  padding-bottom: 20px;
+  position: relative;
 }
 
-.news h2 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #000000;
+.news .new h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-.news p {
-  color: rgba(255, 255, 255, 0.6);
+.news .new p {
+  font-size: 22px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  border-radius: 20px;
 }
+
+.news .new p {
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+}
+.news .new .new-link {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 10px;
+}
+
 /*--------------------------------------------------------------
 # Our Services Section
 --------------------------------------------------------------*/
@@ -1479,11 +1489,11 @@ section {
 --------------------------------------------------------------*/
 .team .member {
   text-align: center;
-  background: #fff;
+  background: #f5dfdf;
   border-radius: 10px;
   padding: 15px;
   overflow: hidden;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
 }
 
 .team .member img {
@@ -1525,7 +1535,7 @@ section {
 }
 
 .team .member .social a {
-  color: #a2a2a2;
+  color: #25D366;
   transition: 0.3s;
   border-radius: 50%;
   width: 50px;
@@ -1542,6 +1552,22 @@ section {
 }
 
 .team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+.team .emails {
+  margin-top: 40px;
+  background: #fcf0f0;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+  text-align: center;
+  border-radius: 10px;
+}
+.team .emails i {
+  font-size: 28px;
+  margin: 0 2px;
+  color: #00b6a1;
+}
+.team .emails i p {
   font-size: 18px;
   margin: 0 2px;
 }
