@@ -10,7 +10,7 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: linear-gradient(180deg, rgba(0, 0, 102, 0.308) 0%, rgba(62, 178, 255) 78%);
+  --color-primary: linear-gradient(180deg, rgba(57, 169, 243, 0.473) 0%, rgba(62, 178, 255) 78%);
   --color-secondary: #f85a40;
 }
 
@@ -1489,7 +1489,7 @@ section {
 --------------------------------------------------------------*/
 .team .member {
   text-align: center;
-  background: #f5dfdf;
+  background: #ffffff;
   border-radius: 10px;
   padding: 15px;
   overflow: hidden;
